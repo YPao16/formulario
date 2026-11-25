@@ -1,0 +1,285 @@
+#root {
+  min-height: 100vh;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 18px 18px;
+  background:
+    radial-gradient(ellipse at 12% 18%, #ffe1ea 0, transparent 32%),
+    radial-gradient(ellipse at 88% 82%, #f9dce6 0, transparent 30%),
+    #fff8fa;
+}
+
+.card {
+  width: min(100%, 410px);
+  padding: 38px;
+  background: #fff;
+  border: 1px solid #f5e6eb;
+  border-radius: 22px;
+  box-shadow: 0 16px 50px #9f586117;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin: 0 auto 34px;
+  color: #854e61;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 10px;
+  background: #f7dce5;
+  color: #a95270;
+  font-size: 17px;
+}
+
+.card h1 {
+  margin: 0;
+  color: #432d36;
+  font-size: 26px;
+  text-align: center;
+}
+
+.intro {
+  margin: 9px 0 25px;
+  color: #8d7b82;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #59434c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #eadde2;
+  border-radius: 10px;
+  outline: none;
+  background: #fffdfd;
+  color: #432d36;
+  font: inherit;
+  font-weight: 400;
+}
+
+.field input:focus {
+  border-color: #d98da6;
+  box-shadow: 0 0 0 3px #f7dce566;
+}
+
+.extra {
+  margin: -4px 0 18px;
+  text-align: right;
+}
+
+.card a:not(.brand) {
+  color: #a95270;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card a:not(.brand):hover {
+  text-decoration: underline;
+}
+
+.card button,
+.button-link {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 10px;
+  background: #d98da6;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background 150ms ease;
+}
+
+.card button:hover,
+.button-link:hover {
+  background: #c97793;
+}
+
+.card .footer {
+  margin: 23px 0 0;
+  color: #8d7b82;
+  font-size: 13px;
+  text-align: center;
+}
+
+.success-icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 18px;
+  place-items: center;
+  border-radius: 50%;
+  background: #f7dce5;
+  color: #a95270;
+  font-size: 24px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 12px;
+  margin: 0;
+  color: #a18d95;
+  font-size: 11px;
+}
+
+.rick-card {
+  width: min(100%, 720px);
+  padding: 38px;
+  background: #fff;
+  border: 1px solid #f5e6eb;
+  border-radius: 22px;
+  box-shadow: 0 16px 50px #9f586117;
+}
+
+.rick-card h1 {
+  margin: 20px 0 0;
+  color: #432d36;
+  font-size: 26px;
+  text-align: center;
+}
+
+.rick-back {
+  color: #a95270;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rick-back:hover {
+  text-decoration: underline;
+}
+
+.character-search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 12px;
+}
+
+.character-search .field {
+  margin: 0;
+}
+
+.character-search button {
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #d98da6;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.character-search button:hover {
+  background: #c97793;
+}
+
+.character-search button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.search-message {
+  margin: 20px 0 0;
+  font-size: 14px;
+}
+
+.search-error {
+  color: #a52e4b;
+}
+
+.character-result {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+  overflow: hidden;
+  border: 1px solid #f5e6eb;
+  border-radius: 16px;
+  background: #fffdfd;
+}
+
+.character-result img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+
+.character-details {
+  padding: 20px 20px 20px 0;
+  color: #59434c;
+  font-size: 14px;
+}
+
+.character-details h2 {
+  margin: 0 0 14px;
+  color: #432d36;
+  font-size: 22px;
+}
+
+.character-details p {
+  margin: 8px 0;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 30px 24px;
+  }
+
+  .rick-card {
+    padding: 30px 24px;
+  }
+
+  .character-search {
+    grid-template-columns: 1fr;
+  }
+
+  .character-result {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .character-result img {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1;
+  }
+
+  .character-details {
+    padding: 20px;
+  }
+}
